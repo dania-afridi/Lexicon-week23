@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Guess Game</h1>
+    <p>Guess a number between 1 to 100 :</p>
+    <form asp-controller="Home" asp-action="Index" method="get" enctype="multipart/form-data">
+        <label>Enter your Guess:</label> <br />
+        <input type="number" id="userGuess" name="userGuess" required/><br /><br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   
+    <h3>@ViewBag.Message</h3>
+</div>
